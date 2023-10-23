@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    .subBttn{
+        margin-top: 0.5rem;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido al Ejercicio de Colas</h1>    
+</div>
+<form method="post">
+    <fieldset>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <label for="ClientId">Id Cliente</label>
+                <input type="text" id="ClientId" name="ClientId" />
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <label for="ClientName">Nombre Cli</label>
+                <input type="text" id="ClientName" name="ClientName" />
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row subBttn">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" align="center">                
+                <input type="submit" value="Asignar" />
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </fieldset>
+</form>
