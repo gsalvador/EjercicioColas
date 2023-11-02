@@ -16,16 +16,32 @@ namespace EjercicioColas.CRUD
 
         public void InsertClient(string id, string name)
         {
-            Cliente cliente = new Cliente() { Id = id, Nombre = name };
-            _colasContext.Clientes.Add(cliente);
-            _colasContext.SaveChanges();
+            try
+            {
+                Cliente cliente = new Cliente() { Id = id, Nombre = name };
+                _colasContext.Clientes.Add(cliente);
+                _colasContext.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw;
+            }
         }
 
         public void InsertQueue(string idClient, int queueKind)
         {
-            Cola cola = new Cola() { IdCliente = idClient, IdTipoCola = queueKind };
-            _colasContext.Colas.Add(cola);
-            _colasContext.SaveChanges();
+            try
+            {
+                Cola cola = new Cola() { IdCliente = idClient, IdTipoCola = queueKind };
+                _colasContext.Colas.Add(cola);
+                _colasContext.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
     }
 }

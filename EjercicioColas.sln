@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioColas", "EjercicioColas.csproj", "{27B7AB35-C44C-4A53-87F0-9C8BA69D95F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "..\TestProject1\TestProject1.csproj", "{6CA8B752-1A7D-498A-8CCA-56E1F7EE3593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "..\TestProject1\TestProject1.csproj", "{6CA8B752-1A7D-498A-8CCA-56E1F7EE3593}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

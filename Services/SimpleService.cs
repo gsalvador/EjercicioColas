@@ -1,7 +1,7 @@
 ﻿using EjercicioColas;
 using EjercicioColas.CRUD;
 
-namespace PeriodicBackgroundTaskSample;
+namespace EjercicioColas.Services;
 
 class SimpleService
 {
@@ -20,11 +20,11 @@ class SimpleService
         //_logger.LogInformation(
         //    "Sample Service did something.");
         DeleteOps dOps = new DeleteOps(_context, (ILogger<DeleteOps>)_logger);
-        ReadOps rOps = new ReadOps((ILogger<EjercicioColas.Pages.IndexModel>)_logger, _context);
+        ReadOps rOps = new ReadOps((ILogger<Pages.IndexModel>)_logger, _context);
         int swich = 0;
         Task task = Task.Run(() =>
         {
-            var item = rOps.GetNextItemQueue(2+(swich++%2));
+            var item = rOps.GetNextItemQueue(2 + swich++ % 2);
             dOps.DelQueue(item.IdCliente);
             dOps.DelClient(item.IdCliente);
         });

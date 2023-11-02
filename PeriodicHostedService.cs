@@ -1,4 +1,6 @@
-﻿namespace PeriodicBackgroundTaskSample;
+﻿using EjercicioColas.Services;
+
+namespace PeriodicBackgroundTaskSample;
 
 class PeriodicHostedService : BackgroundService
 {
