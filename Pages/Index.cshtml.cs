@@ -47,14 +47,14 @@ namespace EjercicioColas.Pages
                 if (queueKind2 * 2 > queueKind3 * 3)
                 {
                     // Assign to queue of type 3
-                    cOps.InsertQueue(clientId, 3);
+                    cOps.InsertQueue(clientId, 2);
                     _toastNotification.AddSuccessToastMessage("El usuario fue asignado a la cola 3");
 
                 }
                 else if (queueKind2 * 2 <= queueKind3 * 3)
                 {
                     // Assign to queue of type 2
-                    cOps.InsertQueue(clientId, 2);
+                    cOps.InsertQueue(clientId, 1);
                     _toastNotification.AddSuccessToastMessage("El usuario fue asignado a la cola 2");
                 }
             }
